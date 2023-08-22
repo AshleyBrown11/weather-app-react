@@ -1,3 +1,33 @@
+# React Weather App
+
+This is a weather app built with React that allows users to enter a city name and click the search button to fetch weather data for a particular city.
+
+## How to Run
+
+1. Clone this repository.
+2. Navigate to the project directory in your terminal.
+3. Run `npm install` to install the project dependencies.
+4. Replace `YOUR_API_KEY` and `YourCity` in `src/App.js` with your actual API key and desired city name.
+5. Run `npm start` to start the development server.
+6. Open your browser and go to `http://localhost:3000` to see the app in action.
+
+## Features
+
+- Fetches weather data from a third-party API.
+- Displays weather information including description and temperature.
+
+## Technologies Used
+
+- React
+- CSS
+
+## Screenshots
+
+Add screenshots of your app in action here.
+s
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
