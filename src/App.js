@@ -8,7 +8,7 @@ import axios from "axios";
 export default function App() {
   // state to hold the weather
   const [weather, setWeather] = useState(null);
-  const [cityName, setCityName] = useState("Atlanta");
+  const [cityName, setCityName] = useState("");
   const apiKey = process.env.REACT_APP_API_KEY;
   
   const fetchWeather = async () => {
@@ -31,6 +31,7 @@ export default function App() {
   
     return (
       <div className="App">
+        <header>Weather Love Station</header>
        <Search weatherSearch= {setCityName} cityName={cityName} fetchWeather={fetchWeather}/> 
       <WeatherDisplay weather= {weather}/> 
        

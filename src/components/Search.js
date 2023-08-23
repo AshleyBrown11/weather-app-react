@@ -7,9 +7,9 @@ export default function Search ({cityName, weatherSearch, apiKey, fetchWeather})
   
   
 // handleChange - updates searchData when we type into form
-  const handleChange = (event) => {
+  const handleChange = (evt) => {
     // use the event object to detect key and value to update
-    weatherSearch(event.target.value );
+    weatherSearch(evt.target.value );
   };
 
   const handleSubmit = (evt) => {
@@ -21,17 +21,20 @@ export default function Search ({cityName, weatherSearch, apiKey, fetchWeather})
 
   
     return (
-   
+      
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          className="search"
+          placeholder="Enter Location"
           onChange={handleChange}
           value={cityName}
           name="cityName"
+         
         />
         <input type="submit" value="submit" onClick={() => fetchWeather()} />
       </form>
-  
+      
   );
     }
 

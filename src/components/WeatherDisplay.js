@@ -5,41 +5,44 @@ export default function WeatherDisplay({ weather }) {
       return (
         <>
             <div className="top">
+            
             <div className="location">
-            <p>{weather.name}</p>
+            <p>Weather In {weather.name}</p>
          </div>
              <div className="temp">
-                <p>Temperature</p>
-         {weather.main ? <p className="bold">{weather.main.temp}°F</p> : null}
+                
+         <h1>{weather.main.temp}°F</h1> 
          </div>
             <div className="description">
-            <p>{weather.weather.description}</p>
+            <p>{weather.weather[0].description}</p>
             </div>
          <p>{weather.icon}</p>
          </div>
             <div className="bottom">
             <div className="feels">
+            
+          <p>{weather.main.feels_like}°F</p> 
             <p>Feels Like</p>
-          {weather.main ? <p className="bold">{weather.main.feels_like}°F</p> : null}
-           
           </div>
             <div className="humidity">
-            <p>Humidity</p>
-         {weather.main ? <p className="bold">{weather.main.humidity}%</p> : null}
+            
+          <p>{weather.main.humidity}%</p> 
+            <p>Humidity</p> 
             </div>
             <div className="wind">
+           
+          <p>{weather.wind.speed}MPH</p> 
             <p>Wind Speed</p>
-         {weather.wind ? <p className="bold">{weather.wind.speed}MPH</p> : null}
-            
          </div>
          </div>
     </>
       );
     };
   
+    // Function to return loading JSX
     const loading = () => {
-      return <h2>Loading weather data....</h2>;
+      return <h2 className="weather-loading">Loading weather data....</h2>;
     };
     return weather ? loaded() : loading();
   }
-  
+  // Ternary operator will determine which functions JSX will return
