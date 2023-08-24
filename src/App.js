@@ -32,7 +32,7 @@ export default function App() {
     return (
       <div className="App">
         <header>Weather Love Station</header>
-       <Search weatherSearch= {setCityName} cityName={cityName} fetchWeather={fetchWeather}/> 
+       <Search weatherSearch= {setCityName} cityName={cityName} fetchWeather={fetchWeather} /> 
       <WeatherDisplay weather= {weather}/> 
        
       </div>

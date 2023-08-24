@@ -23,9 +23,7 @@ This is a weather app built with React that allows users to enter a city name an
 
 ## Screenshots
 
-Add screenshots of your app in action here.
-s
-
+![Alt text](image-1.png)
 
 
 # Getting Started with Create React App

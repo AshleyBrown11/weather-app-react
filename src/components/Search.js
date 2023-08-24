@@ -1,11 +1,9 @@
 // Sender Child
 // Created a function in the parent component that accepts a callback as argument. Pass the function to the child component as a prop. 
-export default function Search ({cityName, weatherSearch, apiKey, fetchWeather}) {
 
 
-  
-  
-  
+export default function Search ({cityName, weatherSearch,  fetchWeather}) {
+
 // handleChange - updates searchData when we type into form
   const handleChange = (evt) => {
     // use the event object to detect key and value to update
@@ -16,11 +14,12 @@ export default function Search ({cityName, weatherSearch, apiKey, fetchWeather})
     // prevent page from refreshing on search submission
     evt.preventDefault();
     // pass the search term to weathersearch prop, which is apps getWeather function
-    // weatherSearch(cityName);
+    
+    fetchWeather()
+    
   };
-
   
-    return (
+  return (
       
       <form onSubmit={handleSubmit}>
         <input
@@ -30,9 +29,9 @@ export default function Search ({cityName, weatherSearch, apiKey, fetchWeather})
           onChange={handleChange}
           value={cityName}
           name="cityName"
-         
+          // formAction='https://source.unsplash.com/1600x900/?" + name + "'
         />
-        <input type="submit" value="submit" onClick={() => fetchWeather()} />
+        <input type="submit" value="submit" />
       </form>
       
   );

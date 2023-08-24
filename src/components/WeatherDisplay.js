@@ -4,6 +4,7 @@ export default function WeatherDisplay({ weather }) {
     const loaded = () => {
       return (
         <>
+            
             <div className="top">
             
             <div className="location">
@@ -15,6 +16,8 @@ export default function WeatherDisplay({ weather }) {
          </div>
             <div className="description">
             <p>{weather.weather[0].description}</p>
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+
             </div>
          <p>{weather.icon}</p>
          </div>
