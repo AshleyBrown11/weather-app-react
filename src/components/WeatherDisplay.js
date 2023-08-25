@@ -15,8 +15,10 @@ export default function WeatherDisplay({ weather }) {
          <h1>{weather.main.temp}°F</h1> 
          </div>
             <div className="description">
-            <p>{weather.weather[0].description}</p>
             <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+            <p>{weather.weather[0].description}</p>
+            
+            
 
             </div>
          <p>{weather.icon}</p>
