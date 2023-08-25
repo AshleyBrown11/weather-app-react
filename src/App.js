@@ -11,6 +11,7 @@ export default function App() {
   const [cityName, setCityName] = useState("");
   const apiKey = process.env.REACT_APP_API_KEY;
   
+  // function to fetch the weather
   const fetchWeather = async () => {
     try {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=imperial`;

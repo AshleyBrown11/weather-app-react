@@ -1,6 +1,6 @@
 // Sender Child
 // Created a function in the parent component that accepts a callback as argument. Pass the function to the child component as a prop. 
-
+// In the child component, created a function to pass UP to the parent. By calling the parent function prop in the child component with the child function as the argument.
 
 export default function Search ({cityName, weatherSearch,  fetchWeather}) {
 
