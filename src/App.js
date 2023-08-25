@@ -34,8 +34,9 @@ export default function App() {
         <header>Weather Love Station</header>
        <Search weatherSearch= {setCityName} cityName={cityName} fetchWeather={fetchWeather} /> 
       <WeatherDisplay weather= {weather}/> 
-       
+      <audio src="/waterfalls.mp3" controls/>
       </div>
+      
     );
   }
 

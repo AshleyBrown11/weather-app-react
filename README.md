@@ -1,3 +1,6 @@
+## Links
+[Netlify Link]= https://64e8078bce0e04179e180ac2--visionary-custard-3a7aaa.netlify.app/
+
 # React Weather App
 
 This is a weather app built with React that allows users to enter a city name and click the search button to fetch weather data for a particular city.
@@ -21,6 +24,16 @@ This is a weather app built with React that allows users to enter a city name an
 - React
 - CSS
 
+## Dependencies
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
 ## Screenshots
 
 ![Alt text](image-1.png)
